@@ -1,37 +1,9 @@
 {
-  "scripts": {
-    "build": "tsc",
-    "build:changelog": "npx @discordx/changelog --root=src",
-    "docker": "yarn build:docker && yarn remove:docker && yarn run:docker",
-    "build:docker": "docker build -t vizcord .",
-    "run:docker": "docker run -d vizcord:latest",
-    "remove:docker": "docker rm --force vizcord",
-    "dev": "node --loader ts-node/esm/transpile-only src/index.ts",
-    "serve": "node build/index.js",
-    "start": "nodemon --exec node --loader ts-node/esm/transpile-only src/index.ts"
-  },
-  "devDependencies": {
-    "@types/node": "^18.0.3",
-    "nodemon": "^2.0.19",
-    "prettier": "^2.7.1",
-    "ts-node": "^10.8.2",
-    "typescript": "^4.7.4"
-  },
-  "dependencies": {
-    "@discordx/importer": "^1.1.10",
-    "@discordx/pagination": "^2.2.2",
-    "discord.js": "^13.8.1",
-    "discordx": "^9.8.0",
-    "dotenv": "^16.0.1",
-    "reflect-metadata": "^0.1.13"
-  },
-  "name": "vizcord-ts",
+  "name": "vizcord",
   "version": "1.0.0",
-  "main": "build/index.js",
+  "main": "index.js",
+  "repository": "git@github.com:Dgarc359/vizcord.git",
   "license": "MIT",
-  "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=7.0.0"
-  },
-  "type": "module"
+  "private": true,
+  "workspaces": ["backend", "frontend"]
 }
