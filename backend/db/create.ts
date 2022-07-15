@@ -1,5 +1,5 @@
 import sqlite from 'sqlite3';
 
-export const CreateSqliteDb = () => {
+export const createSqliteDb = () => {
 
 }
