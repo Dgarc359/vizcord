@@ -1,4 +1,4 @@
-import { Manga } from "../entities/manga";
+import { Manga } from "../entities/manga.model";
 import { mangaDatasource } from "../datasources";
 
 export class MangaController {
