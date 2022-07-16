@@ -1,4 +1,13 @@
 {
+  "scripts": {
+    "start": "cd frontend && yarn start",
+    "build": "yarn run build:frontend",
+    "build:frontend": "cd frontend/ && yarn run build",
+    "docker": "yarn build:docker && yarn remove:docker && yarn run:docker",
+    "build:docker": "docker build -t vizcord .",
+    "run:docker": "docker run -d vizcord:latest",
+    "remove:docker": "docker rm --force vizcord"
+  },
   "name": "vizcord",
   "version": "1.0.0",
   "repository": "git@github.com:Dgarc359/vizcord.git",
