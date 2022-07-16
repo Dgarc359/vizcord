@@ -1,5 +1,5 @@
 import { Manga } from "../entities/manga";
-import { mangaDatasource } from "../datasource";
+import { mangaDatasource } from "../datasources";
 
 export class MangaController {
   getAll() {

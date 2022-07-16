@@ -1,1 +1,1 @@
-export * from './datasource';
+export * from './datasources/manga-datasource';

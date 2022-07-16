@@ -2,7 +2,7 @@ import { DataSource } from "typeorm"
 
 export const mangaDatasource = new DataSource({
   type: 'better-sqlite3',
-  database: 'manga.db',
+  database: './manga.db',
   synchronize: true,
 });
 
