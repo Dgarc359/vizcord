@@ -3,7 +3,7 @@ import path from 'path';
 
 export const createSqliteDb = () => {
   const db = new sqlite.Database(
-    path.join(__dirname, './manga.db'), 
+    './manga.db', 
     sqlite.OPEN_READWRITE, 
     (err) => console.error(err)
   );
@@ -12,3 +12,5 @@ export const createSqliteDb = () => {
 
   db.close((err) => console.error(err));
 }
+
+createSqliteDb();
