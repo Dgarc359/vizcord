@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "start": "nodemon --exec node --loader ts-node/esm/transpile-only --experimental-specifier-resolution=node src/index.ts"
+    "start": "nodemon --exec node --loader ts-node/esm/transpile-only --experimental-specifier-resolution=node src/index.ts",
+    "create:db": "nodemon --exec node --loader ts-node/esm/transpile-only --experimental-specifier-resolution=node src/db/create.ts"
   },
   "name": "backend",
   "version": "1.0.0",

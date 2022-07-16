@@ -6,5 +6,6 @@ export const parseHtml = (html: string) => {
 
   const nextChapterDiv = cheerio.load($(".section_future_chapter").html()!)
   const nextChapterString = nextChapterDiv.text();
-  console.log(nextChapterString);
+  // console.log(nextChapterString);
+  return nextChapterString;
 }
