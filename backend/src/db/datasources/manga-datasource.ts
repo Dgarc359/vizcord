@@ -1,5 +1,6 @@
 import { DataSource } from "typeorm"
 import { Manga } from "../entities/manga.model";
+import { createMangaTable1658027388504 } from "../migration/1658027388504-create-manga-table";
 
 export const mangaDatasource = new DataSource({
   type: 'better-sqlite3',
@@ -7,7 +8,7 @@ export const mangaDatasource = new DataSource({
   // synchronize: true,
   logging: true,
   entities: [Manga],
-  migrations: ['../migration/**/*.{ts/js}'],
+  migrations: [createMangaTable1658027388504],
 });
 
 
