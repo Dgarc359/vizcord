@@ -1,11 +1,13 @@
 import { DataSource } from "typeorm"
-import path from 'path'
+import { Manga } from "../entities/manga.model";
 
 export const mangaDatasource = new DataSource({
   type: 'better-sqlite3',
-  database: './manga.db',
+  database: 'vizcord.sqlite',
   synchronize: true,
-  entities: [`**/entities/**/*.model.{ts,js}`]
+  logging: true,
+  entities: [Manga],
+  migrations: [],
 });
 
 mangaDatasource.initialize()

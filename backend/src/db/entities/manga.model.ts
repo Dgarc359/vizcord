@@ -1,11 +1,11 @@
-import { Entity, PrimaryGeneratedColumn, Column } from "typeorm";
-import { IManga } from "./interfaces";
+import { Entity, PrimaryGeneratedColumn, Column, BaseEntity } from "typeorm";
+// import { IManga } from "./interfaces";
 
 @Entity()
-export class Manga implements IManga {
+export class Manga extends BaseEntity {
   @PrimaryGeneratedColumn()
   id!: string
 
   @Column()
-  days_to_chapt!: number
+  daysToChapt!: number
 }

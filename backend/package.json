@@ -3,8 +3,7 @@
     "build": "tsc",
     "serve": "node build/index.js",
     "start": "nodemon --exec node --loader ts-node/esm/transpile-only --experimental-specifier-resolution=node src/index.ts",
-    "create:db": "node build/db/create.js",
-    "create:db:ts": "nodemon --exec node --loader ts-node/esm/transpile-only --experimental-specifier-resolution=node src/db/create.ts"
+    "typeorm": "typeorm-ts-node-commonjs"
   },
   "name": "backend",
   "version": "1.0.0",
@@ -19,6 +18,7 @@
   },
   "devDependencies": {
     "@types/sqlite3": "^3.1.8",
+    "ts-node": "^10.9.1",
     "typescript": "^4.7.4"
   },
   "engines": {
