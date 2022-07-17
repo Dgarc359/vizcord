@@ -4,16 +4,19 @@ import { Manga } from "../entities/manga.model";
 export const mangaDatasource = new DataSource({
   type: 'better-sqlite3',
   database: 'vizcord.sqlite',
-  synchronize: true,
+  // synchronize: true,
   logging: true,
   entities: [Manga],
   migrations: ['../migration/**/*.{ts/js}'],
 });
 
-mangaDatasource.initialize()
-  .then(() => 
-    console.log('db init\'d')
-  )
-  .catch((err) =>
-    console.error(err)
-  )
+
+export const initDb = () => {
+  mangaDatasource.initialize()
+    .then(() => 
+      console.log('db init\'d')
+    )
+    .catch((err) =>
+      console.error(err)
+    )
+}

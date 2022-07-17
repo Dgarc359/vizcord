@@ -1,9 +1,13 @@
+import { initDb } from "./db";
 import { requestCSM } from "./external"
 import { parseHtml } from "./html-parsing";
 import { parseStringForDaysTillChapter } from "./utils";
 
 export const main = async () => {
   console.log('starting main backend server');
+  
+  initDb();
+
   const csm = await requestCSM();
 
   if (!csm) return;
