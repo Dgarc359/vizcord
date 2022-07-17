@@ -7,7 +7,7 @@ export const mangaDatasource = new DataSource({
   synchronize: true,
   logging: true,
   entities: [Manga],
-  migrations: [],
+  migrations: ['../migrations/**/*.{ts/js}'],
 });
 
 mangaDatasource.initialize()
