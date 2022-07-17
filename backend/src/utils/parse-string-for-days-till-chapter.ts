@@ -1,7 +1,8 @@
 
 
 export const parseStringForDaysTillChapter = (text: string) => {
-  return text.charAt(22); 
+  const regex = /\d+/;
+  return text.match(regex); 
   // this is a magic number... TODO: If there's a case where this breaks then we need to refactor our logic
   
 }
