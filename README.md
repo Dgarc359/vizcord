@@ -11,3 +11,37 @@ The aim of the Vizcord bot is two-fold:
 The following features are key to Vizcord's MVP:
 1. Users can choose which manga they want to receive updates for
 2. Users will receive a ping when a new chapter for a manga they've subscribed to drops
+
+## Resources
+
+https://www.tcbscans.org/home-4/
+
+https://blog.feedspot.com/manga_rss_feeds/
+
+https://www.feedspot.com/infiniterss.php?_src=feed_title&followfeedid=5010203&q=site:https%3A%2F%2Fkodansha.us%2Ffeed%2F
+
+https://blog.feedspot.com/anime_rss_feeds/
+
+https://www.feedspot.com/infiniterss.php?_src=feed_title&followfeedid=4553709&q=site:https%3A%2F%2Fwww.animenewsnetwork.com%2Fall%2Frss.xml%3Fann-edition%3Dus
+
+https://www.animenewsnetwork.com/review/rwby-ice-queendom/episode-5/.188309
+
+https://www.feedspot.com/fe/4553709?_src=folder
+
+https://myanimelist.net/forum/?topicid=1862978
+
+https://myanimelist.net/news
+
+https://monitorss.xyz/
+
+https://www.reddit.com/r/discordapp/comments/998p1y/how_to_add_an_anime_updates_webhook/
+
+https://ifttt.com/
+
+https://github.com/Sulaxan/anime-releases
+
+https://www.crunchyroll.com/feed
+
+https://www.google.com/search?client=firefox-b-1-d&q=viz+manga+rss+feed
+
+https://node2.feed43.com/shonenjump.xml
